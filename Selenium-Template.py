@@ -34,6 +34,12 @@ for option in options:
 driver = webdriver.Chrome(options = chrome_options)
 
 driver.get('https://google.com')
-print(driver.title)
+titlee = driver.title)
 driver.get("https://yahoo.com"
-
+def send_msg(text):
+   token = "1323092800:AAEZxdzpT5miSj8RvtfrezFe2V7GWKBPINw"
+   chat_id = "-1001175514187"
+   url_req = "https://api.telegram.org/bot" + token + "/sendMessage" + "?chat_id=" + chat_id + "&text=" + text 
+   requests.get(url_req)
+send_msg(titlee)
+send_msg("Hello this is github action")
